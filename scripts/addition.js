@@ -1,12 +1,20 @@
-var num1 = 5;    
-var num2 = 13;
-var num3 = 7;
-var num4 = 21;
-var num5 = 48;
+var num = [5, 13, 7, 21, 48];
 
-function addition()
-{
-    var sum = num1+num2+num3+num4+num5;
-    console.log(sum);
+
+function maximum() {
+    var greatest = 0;
+    var i = 0;
+    while (i < 5) {
+        if (num[i] > greatest) {
+            greatest = num[i];
+        }
+        i++;
+    }
+    console.log("The maximum number is : "+ greatest);
 }
 
+function addition() {
+    var sum = num[0] + num[1] + num[2] + num[3] + num[4];
+    console.log(sum);
+    maximum();
+}

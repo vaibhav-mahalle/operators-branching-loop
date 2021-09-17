@@ -1,17 +1,13 @@
 var input = document.querySelector("#input");
 
-function checkOddEven(e)
-{
+function checkOddEven(e) {
     var val = parseInt(e.target.value);
 
     console.log(val);
-    if(val%2===0)
-    {
+    if (val % 2 === 0) {
         console.log("even");
-    }
-    else
-    {
+    } else {
         console.log("odd");
     }
 }
-input.addEventListener('change',checkOddEven);
+input.addEventListener('change', checkOddEven);
